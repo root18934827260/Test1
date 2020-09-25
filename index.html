@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link href="css/jquery.mobile-1.4.5.min.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page" id="pageone" >
+			<div data-role="panel" id="myPanel">
+				<h2>面板头部</h2>
+				<p>你可以通过点击面板外部区域或按下 Esc 键或滑动来关闭面板。</p>
+			</div>
+			<div data-role="header">
+				<h1>欢迎来到我的主页</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<p>欢迎! 点击以下链接跳转到第二个页面。 </p>
+				<a href="#pagetwo" class="ui-btn ui-shadow" data-role="button" data-inline="true" data-transition="slideup">跳转到第二个页面</a>
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-notext ui-nodisc-icon  ui-alt-icon" data-rel="back" data-role="button">按钮 1</a>
+					<a href="#anylink" data-role="button">按钮 2</a>
+					<a href="#anylink" data-role="button">按钮 3</a>
+				</div>
+				<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">显示弹窗</a>
+				<div style="" data-role="popup" id="myPopup" data-position-to="window" class="ui-content">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">关闭</a>
+					<p>我在右上角有个关闭按钮</p>
+					<p><b>提示:</b> 你也可以通过点击弹窗外的区域来关闭弹窗。</p>
+				</div>
+				<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+					<thead>
+						<tr>
+							<th data-priority="6">CustomerID</th>
+							<th>CustomerName</th>
+							<th data-priority="1">ContactName</th>
+							<th data-priority="2">Address</th>
+							<th data-priority="3">City</th>
+							<th data-priority="4">PostalCode</th>
+							<th data-priority="5">Country</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Alfreds Futterkiste</td>
+							<td>Maria Anders</td>
+							<td>Obere Str. 57</td>
+							<td>Berlin</td>
+							<td>12209</td>
+							<td>Germany</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Antonio Moreno Taquer</td>
+							<td>Antonio Moreno</td>
+							<td>Mataderos 2312</td>
+							<td>Mico D.F.</td>
+							<td>05023</td>
+							<td>Mexico</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Around the Horn</td>
+							<td>Thomas Hardy</td>
+							<td>120 Hanover Sq.</td>
+							<td>London</td>
+							<td>WA1 1DP</td>
+							<td>UK</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Berglunds snabbk</td>
+							<td>Christina Berglund</td>
+							<td>Berguvsven 8</td>
+							<td>Lule</td>
+							<td>S-958 22</td>
+							<td>Sweden</td>
+						</tr>
+
+					</tbody>
+				</table>
+				<div class="ui-grid-d">
+					<div class="ui-block-a">
+						<a href="#" class="ui-btn ui-corner-all ui-shadow">第一列按钮</a><br>
+
+					</div>
+
+					<div class="ui-block-b">
+						<a href="#" class="ui-btn ui-corner-all ui-shadow">第二列按钮</a><br>
+
+					</div>
+					<div class="ui-block-c">
+						<a href="#" class="ui-btn ui-corner-all ui-shadow">第二列按钮</a><br>
+
+					</div>
+					<div class="ui-block-d">
+						<a href="#" class="ui-btn ui-corner-all ui-shadow">第二列按钮</a><br>
+
+					</div>
+					<div class="ui-block-e">
+						<a href="#" class="ui-btn ui-corner-all ui-shadow">第二列按钮</a><br>
+
+					</div>
+				</div>
+				 <div data-role="main" class="ui-content">
+  <h2>我的通讯录</h2>
+  <ul data-role="listview" data-autodividers="true" data-inset="true">
+    <li><a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">显示弹窗</a></li>
+    <li><a href="#">Agnes</a></li>
+    <li><a href="#">Albert</a></li>
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Cameron</a></li>
+    <li><a href="#">Chloe</a></li>
+    <li><a href="#">Christina</a></li>
+    <li><a href="#">Diana</a></li>
+    <li><a href="#">Gabriel</a></li>
+    <li><a href="#">Glen</a></li>
+    <li><a href="#">Ralph</a></li>
+    <li><a href="#">Valarie</a></li>
+  </ul>
+  <p>data-autodividers="true" 属性通过对列表项文本的首字母进行大写来创建分隔符。</p>
+  </div>
+			</div>
+
+			<div data-role="footer">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">打开面板</a>
+						</li>
+						<li>
+							<a href="#anylink">页面二</a>
+						</li>
+						<li>
+							<a href="#anylink">搜索</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="page" data-dialog="true" id="pagetwo">
+				<div data-role="header">
+					<h1>欢迎来到我的主页</h1>
+				</div>
+
+				<div data-role="main" class="ui-content">
+					<p>这是第二个页面。点击以下链接跳转到第一个页面。</p>
+					<a href="#pageone">跳转到第一个页面</a>
+				</div>
+
+				<div data-role="footer">
+					<h1>底部文本</h1>
+				</div>
+			</div>
+	</body>
+
+</html>
